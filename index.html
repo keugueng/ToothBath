@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from html.awaikenthemes.com/dentaire/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Nov 2026 02:34:34 GMT -->
+<!-- Mirrored from html.awaikenthemes.com/dentaire/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Nov 2026 02:35:07 GMT -->
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -60,32 +60,10 @@
 					<!-- Main Menu Start -->
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index-2.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home - Hero Version 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Home - Hero Version 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-4.html">Home - Hero Version 3</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-5.html">Home - Hero Version 4</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-6.html">Home - Hero Version 5</a></li>
-                                    </ul>
-                                </li>                                
+                            <ul class="navbar-nav mr-auto" id="menu"> 
+                                <li class="nav-item"><a class="nav-link" href="about.html">Home</a></li>                               
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Our Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ's</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                                 <li class="nav-item highlighted-menu"><a class="nav-link" href="appointment.html">book appointment</a></li>                               
                             </ul>
@@ -106,7 +84,7 @@
 	<!-- Header End -->
 
     <!-- Hero Section Start -->
-	<div class="hero">
+	<div class="hero hero-book-appointment">
 		<div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -145,53 +123,57 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Hero Image Start -->
-                    <div class="hero-image">
-                        <!-- Hero Img Start -->
-                        <div class="hero-img">
-                            <figure>
-                                <img src="images/hero-img.png" alt="">
-                            </figure>
+                    <div class="appointment-form">
+                        <div class="hero-appointment-form-title">
+                            <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
+                            <p class="wow fadeInUp">Easily schedule your appointment by a Filling out our simple form</p>
                         </div>
-                        <!-- Hero Img End -->
+                        <!-- Form Start -->
+                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+                            <div class="row">
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
 
-                        <!-- Hero Image Tag Start -->
-                        <div class="export-dantist-box">
-                            <div class="icon-box">
-                                <figure class="image-anime">
-                                    <img src="images/dantist-doctor-img.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="export-dantist-content">
-                                <h3>dr. clara Lee</h3>
-                                <p>dantist</p>
-                            </div>
-                        </div>  
-                        <!-- Hero Image Tag End -->
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
 
-                        <!-- Hero Icon List Start -->
-                        <div class="hero-icon-list">
-                            <div class="hero-icon-box-1">
-                                <img src="images/icon-hero-theeth-1.svg" alt="">
-                            </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
 
-                            <div class="hero-icon-box-2">
-                                <img src="images/icon-hero-theeth-2.svg" alt="">
-                            </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <select name="services" class="form-control form-select" id="services" required>
+                                        <option value="" disabled selected>select service</option>
+											<option value="general_dental_care">general dental care</option>
+											<option value="dental_implants">dental implants</option>
+											<option value="cosmetic_dentistry">cosmetic dentistry</option>
+											<option value="teeth_whitening">teeth whitening</option>
+											<option value="pediatric_dental_care">pediatric dental care</option>
+											<option value="advanced_oral_care">advanced oral care</option>
+											<option value="comfort_dentistry">comfort dentistry</option>
+											<option value="smile_renewal">smile renewal</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
 
-                            <div class="hero-icon-box-3">
-                                <img src="images/icon-hero-theeth-3.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- Hero Icon List End -->
+                                <div class="form-group col-md-6 mb-5">
+                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
 
-                        <!-- Icon Start Image Start -->
-                        <div class="icon-star-image">
-                            <img src="images/icon-star.svg" alt="">
-                        </div>
-                        <!-- Icon Start Image End -->
+                                <div class="col-md-12 form-group">
+                                    <button type="submit" class="btn-default">book appointment</button>
+                                    <div id="msgSubmit" class="h3 d-none"></div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form End -->
                     </div>
-                    <!-- Hero Image End -->
                 </div>
             </div>
         </div>
@@ -1420,5 +1402,5 @@
     <script src="../../demo.awaikenthemes.com/assets/js/theme-panel-dynamic.js"></script>
 </body>
 
-<!-- Mirrored from html.awaikenthemes.com/dentaire/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Nov 2026 02:35:01 GMT -->
+<!-- Mirrored from html.awaikenthemes.com/dentaire/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Nov 2026 02:35:07 GMT -->
 </html>
